@@ -1,0 +1,29 @@
+{
+    "name": "root4root/imgresize",
+    "description": "Yet another images resize library",
+    "type": "library",
+    "keywords": [
+        "images",
+        "resize"
+    ],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Paul aka root4root",
+            "email": "root4root@gmail.com"
+        }
+    ],
+    "require": {
+        "php": ">=5.4.0",
+        "ext-gd": "*"
+    },
+    "suggest":
+    {
+        "ext-exif": "Rotate jpg files"
+    },
+    "autoload": {
+       "psr-4": {
+          "Root4root\\ImgResize\\": "src/"
+        }
+    }
+}
