@@ -114,6 +114,11 @@ class ImgResize
         }
         
         $imageInfo = getimagesize($imageFilePath);
+        
+        if ($imageInfo === false) {
+            throw new BadImageFileException('Unable to load image: unsupported format');
+        }
+        
         $this->imageType = $imageInfo[2];
         
         $this->filename = $imageFilePath;
